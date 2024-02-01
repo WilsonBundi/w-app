@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  .sidebar ul li a:hover {
+    background: #555;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+</style>
+  
+</head>
+<body>
+  <div class="dashboard">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <section id="section1">
+        <h2>Section 1 Content</h2>
+        <p>This is the content of section 1.</p>
+      </section>
+      <section id="section2">
+        <h2>Section 2 Content</h2>
+        <p>This is the content of section 2.</p>
+      </section>
+      <section id="section3">
+        <h2>Section 3 Content</h2>
+        <p>This is the content of section 3.</p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
